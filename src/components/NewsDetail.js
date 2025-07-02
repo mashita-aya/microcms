@@ -33,7 +33,7 @@ const NewsDetail = () => {
     <div>
       <h2>{news.title}</h2>
       <p>{new Date(news.publishedAt).toLocaleDateString()}</p>
-      <div dangerouslySetInnerHTML={{ __html: news.body }} />
+      <div dangerouslySetInnerHTML={{ __html: news.content }} />
     </div>
   );
 };
